@@ -1,4 +1,34 @@
 {
+	"slt": {
+		"prefix": "slt",
+		"body": "slt\t${1:t0}, ${2:t1}, ${3:t2}; # $1 = ($2 < $3) ? 1 : 0\n",
+		"description": "set less than",
+		"scope": "source.riscv"
+	},
+	
+	"slti": {
+		"prefix": "slti",
+		"body": "slti\t${1:t0}, ${2:t1}, ${3:imm}; # $1 = ($2 < $3) ? 1 : 0\n",
+		"description": "set less than immediate",
+		"scope": "source.riscv"
+	},
+	
+	"sltu": {
+		"prefix": "sltu",
+		"body": "sltu\t${1:t0}, ${2:t1}, ${3:t2}; # $1 = ($2 <U $3) ? 1 : 0\n",
+		"description": "set less than unsigned",
+		"scope": "source.riscv"
+	},
+	
+	"sltiu": {
+		"prefix": "sltiu",
+		"body": "sltiu\t${1:t0}, ${2:t1}, ${3:imm}; # $1 = ($2 <U $3) ? 1 : 0\n",
+		"description": "set less than immediate unsigned",
+		"scope": "source.riscv"
+	},
+	
+	
+	
 	"and": {
 		"prefix": "and",
 		"body": "and\t${1:t0}, ${2:t1}, ${3:t2}; # $1 = $2 & $3\n",
