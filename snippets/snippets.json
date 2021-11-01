@@ -189,13 +189,13 @@
 	},
 	"load address": {
 		"prefix": "la",
-		"body": "la\t${1:t1}, ${2:var1} # \n",
+		"body": "la\t${1:t1}, ${2:var1} # ",
 		"description": "load address",
 		"scope": "source.riscv"
 	},
 	"load byte": {
 		"prefix": "lb",
-		"body": "lb\t${1:t1}, ${2:${3:0}(${4:s1})} # \n",
+		"body": "lb\t${1:t1}, ${2:${3:0}(${4:s1})} # ",
 		"description": "load byte",
 		"scope": "source.riscv"
 	},
@@ -207,7 +207,7 @@
 	},
 	"load word": {
 		"prefix": "lw",
-		"body": "lw\t${1:t1}, ${2:${3:0}(${4:s1})} # \n",
+		"body": "lw\t${1:t1}, ${2:${3:0}(${4:s1})} # ",
 		"description": "load word",
 		"scope": "source.riscv"
 	},
@@ -219,13 +219,13 @@
 	},
 	"store byte": {
 		"prefix": "sb",
-		"body": "sb\t${1:t1}, ${2:${3:0}(${4:s1})} # \n",
+		"body": "sb\t${1:t1}, ${2:${3:0}(${4:s1})} # ",
 		"description": "store byte",
 		"scope": "source.riscv"
 	},
 	"store word": {
 		"prefix": "sw",
-		"body": "sw\t${1:t1}, ${2:${3:0}(${4:s1})} # \n",
+		"body": "sw\t${1:t1}, ${2:${3:0}(${4:s1})} # ",
 		"description": "store word",
 		"scope": "source.riscv"
 	},
