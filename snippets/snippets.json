@@ -7,28 +7,28 @@
 		"scope": "source.riscv"
 	},
 	
-	"slt": {
+	"set less than": {
 		"prefix": "slt",
 		"body": "slt\t${1:t0}, ${2:t1}, ${3:t2}; # $1 = ($2 < $3) ? 1 : 0\n",
 		"description": "set less than",
 		"scope": "source.riscv"
 	},
 	
-	"slti": {
+	"set less than immediate": {
 		"prefix": "slti",
 		"body": "slti\t${1:t0}, ${2:t1}, ${3:imm}; # $1 = ($2 < $3) ? 1 : 0\n",
 		"description": "set less than immediate",
 		"scope": "source.riscv"
 	},
 	
-	"sltu": {
+	"set less than unsigned": {
 		"prefix": "sltu",
 		"body": "sltu\t${1:t0}, ${2:t1}, ${3:t2}; # $1 = ($2 <U $3) ? 1 : 0\n",
 		"description": "set less than unsigned",
 		"scope": "source.riscv"
 	},
 	
-	"sltiu": {
+	"set less than immediate unsigned": {
 		"prefix": "sltiu",
 		"body": "sltiu\t${1:t0}, ${2:t1}, ${3:imm}; # $1 = ($2 <U $3) ? 1 : 0\n",
 		"description": "set less than immediate unsigned",
@@ -37,83 +37,83 @@
 	
 	
 	
-	"and": {
+	"bitwise and": {
 		"prefix": "and",
 		"body": "and\t${1:t0}, ${2:t1}, ${3:t2}; # $1 = $2 & $3\n",
 		"description": "bitwise and",
 		"scope": "source.riscv"
 	},
-	"or": {
+	"bitwise or": {
 		"prefix": "or",
 		"body": "or\t${1:t0}, ${2:t1}, ${3:t2}; # $1 = $2 | $3\n",
 		"description": "bitwise or",
 		"scope": "source.riscv"
 	},
-	"xor": {
+	"bitwise xor": {
 		"prefix": "xor",
 		"body": "xor\t${1:t0}, ${2:t1}, ${3:t2}; # $1 = $2 ^ $3\n",
 		"description": "bitwise xor",
 		"scope": "source.riscv"
 	},
 	
-	"andi": {
+	"bitwise and": {
 		"prefix": "andi",
 		"body": "andi\t${1:t0}, ${2:t1}, ${3:imm}; # $1 = $2 & $3\n",
 		"description": "bitwise and",
 		"scope": "source.riscv"
 	},
-	"ori": {
+	"bitwise or": {
 		"prefix": "ori",
 		"body": "ori\t${1:t0}, ${2:t1}, ${3:imm}; # $1 = $2 | $3\n",
 		"description": "bitwise or",
 		"scope": "source.riscv"
 	},
-	"xori": {
+	"bitwise xor": {
 		"prefix": "xori",
 		"body": "xori\t${1:t0}, ${2:t1}, ${3:imm}; # $1 = $2 ^ $3\n",
 		"description": "bitwise xor",
 		"scope": "source.riscv"
 	},
 	
-	"sll": {
+	"shift left logical": {
 		"prefix": "sll",
 		"body": "sll\t${1:t0}, ${2:t1}, ${3:t2}; # $1 = $2 << $3\n",
 		"description": "shift left logical",
 		"scope": "source.riscv"
 	},
-	"srl": {
+	"shift right logical": {
 		"prefix": "srl",
 		"body": "srl\t${1:t0}, ${2:t1}, ${3:t2}; # $1 = $2 >>U $3\n",
 		"description": "shift right logical",
 		"scope": "source.riscv"
 	},
-	"sra": {
+	"shift right arithmetic": {
 		"prefix": "sra",
 		"body": "sra\t${1:t0}, ${2:t1}, ${3:t2}; # $1 = $2 >> $3\n",
 		"description": "shift right arithmetic",
 		"scope": "source.riscv"
 	},
 	
-	"slli": {
+	"shift left logical immediate": {
 		"prefix": "slli",
 		"body": "slli\t${1:t0}, ${2:t1}, ${3:shamt}; # $1 = $2 << $3\n",
 		"description": "shift left logical immediate",
 		"scope": "source.riscv"
 	},
-	"srli": {
+	"shift right logical immediate": {
 		"prefix": "srli",
 		"body": "srli\t${1:t0}, ${2:t1}, ${3:t2}; # $1 = $2 >>U $3\n",
 		"description": "shift right logical immediate",
 		"scope": "source.riscv"
 	},
-	"srai": {
+	"shift right arithmetic immediate": {
 		"prefix": "srai",
 		"body": "srai\t${1:t0}, ${2:t1}, ${3:t2}; # $1 = $2 >> $3\n",
 		"description": "shift right arithmetic immediate",
 		"scope": "source.riscv"
 	},
 	
-	"addi": {
+	"add immediate": {
 		"prefix": "addi",
 		"body": "addi\t${1:t0}, ${2:t1}, ${3:imm}; # $1 = $2 + $3\n",
 		"description": "add immediate",
@@ -125,87 +125,87 @@
 		"description": "add",
 		"scope": "source.riscv"
 	},
-	"beq": {
+	"branch if equal": {
 		"prefix": "beq",
 		"body": "beq\t${1:t0}, ${2:t1}, ${3:target}; # if $1 == $2 then $3\n",
 		"description": "branch if equal",
 		"scope": "source.riscv"
 	},
-	"bge": {
+	"branch if greater then or equal": {
 		"prefix": "bge",
 		"body": "bge\t${1:t0}, ${2:t1}, ${3:target} # if $1 >= $2 then $3\n",
 		"description": "branch if greater then or equal",
 		"scope": "source.riscv"
 	},
-	"bgt": {
+	"branch if greater then": {
 		"prefix": "bgt",
 		"body": "bgt\t${1:t0}, ${2:t1}, ${3:target} # if $1 > $2 then $3\n",
 		"description": "branch if greater then",
 		"scope": "source.riscv"
 	},
-	"ble": {
+	"branch if less then or equal": {
 		"prefix": "ble",
 		"body": "ble\t${1:t0}, ${2:t1}, ${3:target} # if $1 <= $2 then $3\n",
 		"description": "branch if less then or equal",
 		"scope": "source.riscv"
 	},
-	"blt": {
+	"branch if less then": {
 		"prefix": "blt",
 		"body": "blt\t${1:t0}, ${2:t1}, ${3:target} # if $1 < $2 then $3\n",
 		"description": "branch if less then",
 		"scope": "source.riscv"
 	},
-	"bne": {
+	"branch if not equal": {
 		"prefix": "bne",
 		"body": "bne\t${1:t0}, ${2:t1}, ${3:target} # if $1 != $2 then $3\n",
 		"description": "branch if not equal",
 		"scope": "source.riscv"
 	},
 	
-	"call": {
+	"call function": {
 		"prefix": "call",
 		"body": "call\t${1:target}; # jump to $1 and save position to ra\n",
 		"description": "call function",
 		"scope": "source.riscv"
 	},
 	
-	"jal": {
+	"jump and link": {
 		"prefix": "jal",
 		"body": "jal\t${1:t0}, ${2:target} # jump to $1 and save position to $0\n",
 		"description": "jump and link",
 		"scope": "source.riscv"
 	},
-	"jr": {
+	"jump register": {
 		"prefix": "jr",
 		"body": "jr\t${1:ra} # jump to $1\n",
 		"description": "jump register",
 		"scope": "source.riscv"
 	},
-	"j": {
+	"unconditional jump": {
 		"prefix": "j",
 		"body": "j\t${1:target} # jump to $1\n",
 		"description": "unconditional jump",
 		"scope": "source.riscv"
 	},
-	"la": {
+	"load address": {
 		"prefix": "la",
 		"body": "la\t${1:t1}, ${2:var1} # \n",
 		"description": "load address",
 		"scope": "source.riscv"
 	},
-	"lb": {
+	"load byte": {
 		"prefix": "lb",
 		"body": "lb\t${1:t1}, ${2:${3:0}(${4:s1})} # \n",
 		"description": "load byte",
 		"scope": "source.riscv"
 	},
-	"li": {
+	"load immediate": {
 		"prefix": "li",
 		"body": "li\t${1:t1}, $2 # $1 = $2\n",
 		"description": "load immediate",
 		"scope": "source.riscv"
 	},
-	"lw": {
+	"load word": {
 		"prefix": "lw",
 		"body": "lw\t${1:t1}, ${2:${3:0}(${4:s1})} # \n",
 		"description": "load word",
@@ -217,31 +217,31 @@
 		"description": "move",
 		"scope": "source.riscv"
 	},
-	"sb": {
+	"store byte": {
 		"prefix": "sb",
 		"body": "sb\t${1:t1}, ${2:${3:0}(${4:s1})} # \n",
 		"description": "store byte",
 		"scope": "source.riscv"
 	},
-	"sw": {
+	"store word": {
 		"prefix": "sw",
 		"body": "sw\t${1:t1}, ${2:${3:0}(${4:s1})} # \n",
 		"description": "store word",
 		"scope": "source.riscv"
 	},
-	"string": {
+	"string var": {
 		"prefix": "string",
 		"body": "${1:string}: .asciiz \"$2\"",
 		"description": "string var",
 		"scope": "source.riscv"
 	},
-	"sub": {
+	"substract": {
 		"prefix": "sub",
 		"body": "sub\t${1:t0}, ${2:t1}, ${3:t2} # $1 = $2 - $3\n",
 		"description": "substract",
 		"scope": "source.riscv"
 	},
-	"var": {
+	"variable": {
 		"prefix": "var",
 		"body": "${1:var}: .${2:word} $3",
 		"description": "variable",
