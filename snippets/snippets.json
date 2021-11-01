@@ -1,4 +1,12 @@
 {
+	
+	"neg": {
+		"prefix": "neg",
+		"body": "neg\t${1:t0}, ${2:t1}; # $1 = -$2\n",
+		"description": "two's complement",
+		"scope": "source.riscv"
+	},
+	
 	"slt": {
 		"prefix": "slt",
 		"body": "slt\t${1:t0}, ${2:t1}, ${3:t2}; # $1 = ($2 < $3) ? 1 : 0\n",
@@ -153,9 +161,17 @@
 		"description": "branch if not equal",
 		"scope": "source.riscv"
 	},
+	
+	"call": {
+		"prefix": "call",
+		"body": "call\t${1:target}; # jump to $1 and save position to ra\n",
+		"description": "call function",
+		"scope": "source.riscv"
+	},
+	
 	"jal": {
 		"prefix": "jal",
-		"body": "jal\t${1:target} # jump to $1 and save position to ra\n",
+		"body": "jal\t${1:t0}, ${2:target} # jump to $1 and save position to $0\n",
 		"description": "jump and link",
 		"scope": "source.riscv"
 	},
@@ -168,7 +184,7 @@
 	"j": {
 		"prefix": "j",
 		"body": "j\t${1:target} # jump to $1\n",
-		"description": "jump",
+		"description": "unconditional jump",
 		"scope": "source.riscv"
 	},
 	"la": {
