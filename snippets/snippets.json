@@ -56,19 +56,19 @@
 		"scope": "source.riscv"
 	},
 	
-	"bitwise and": {
+	"bitwise and immediate": {
 		"prefix": "andi",
 		"body": "andi\t${1:t0}, ${2:t1}, ${3:imm}; # $1 = $2 & $3\n",
 		"description": "bitwise and",
 		"scope": "source.riscv"
 	},
-	"bitwise or": {
+	"bitwise or immediate": {
 		"prefix": "ori",
 		"body": "ori\t${1:t0}, ${2:t1}, ${3:imm}; # $1 = $2 | $3\n",
 		"description": "bitwise or",
 		"scope": "source.riscv"
 	},
-	"bitwise xor": {
+	"bitwise xor immediate": {
 		"prefix": "xori",
 		"body": "xori\t${1:t0}, ${2:t1}, ${3:imm}; # $1 = $2 ^ $3\n",
 		"description": "bitwise xor",
