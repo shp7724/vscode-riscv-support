@@ -2,17 +2,17 @@
     "name": "riscv",
     "displayName": "RISC-V Support",
     "description": "Provides syntax highlighting and snippets for RISC-V assembly language",
-    "version": "0.0.8",
-    "publisher": "zhwu95",
-    "homepage": "https://github.com/zhuanhao-wu/vscode-riscv-support",
+    "version": "0.0.9",
+    "publisher": "shp7724",
+    "homepage": "https://github.com/shp7724/vscode-riscv-support",
     "icon": "images/icon.png",
     "repository": {
         "type": "git",
-        "url": "https://github.com/zhuanhao-wu/vscode-riscv-support"
+        "url": "https://github.com/shp7724/vscode-riscv-support"
     },
     "bugs": {
-        "url": "https://github.com/zhuanhao-wu/vscode-riscv-support/issues",
-        "email": "zhwu95@gmail.com"
+        "url": "https://github.com/shp7724/vscode-riscv-support/issues",
+        "email": "shp7724@gmail.com"
     },
     "engines": {
         "vscode": "^1.5.0"
