@@ -102,13 +102,13 @@
 	},
 	"shift right logical immediate": {
 		"prefix": "srli",
-		"body": "srli\t${1:t0}, ${2:t1}, ${3:t2}; # $1 = $2 >>U $3\n",
+		"body": "srli\t${1:t0}, ${2:t1}, ${3:shamt}; # $1 = $2 >>U $3\n",
 		"description": "shift right logical immediate",
 		"scope": "source.riscv"
 	},
 	"shift right arithmetic immediate": {
 		"prefix": "srai",
-		"body": "srai\t${1:t0}, ${2:t1}, ${3:t2}; # $1 = $2 >> $3\n",
+		"body": "srai\t${1:t0}, ${2:t1}, ${3:shamt}; # $1 = $2 >> $3\n",
 		"description": "shift right arithmetic immediate",
 		"scope": "source.riscv"
 	},
