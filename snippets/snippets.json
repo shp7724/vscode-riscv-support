@@ -1,4 +1,80 @@
 {
+	"and": {
+		"prefix": "and",
+		"body": "and\t${1:t0}, ${2:t1}, ${3:t2}; # $1 = $2 & $3\n",
+		"description": "bitwise and",
+		"scope": "source.riscv"
+	},
+	"or": {
+		"prefix": "or",
+		"body": "or\t${1:t0}, ${2:t1}, ${3:t2}; # $1 = $2 | $3\n",
+		"description": "bitwise or",
+		"scope": "source.riscv"
+	},
+	"xor": {
+		"prefix": "xor",
+		"body": "xor\t${1:t0}, ${2:t1}, ${3:t2}; # $1 = $2 ^ $3\n",
+		"description": "bitwise xor",
+		"scope": "source.riscv"
+	},
+	
+	"andi": {
+		"prefix": "andi",
+		"body": "andi\t${1:t0}, ${2:t1}, ${3:imm}; # $1 = $2 & $3\n",
+		"description": "bitwise and",
+		"scope": "source.riscv"
+	},
+	"ori": {
+		"prefix": "ori",
+		"body": "ori\t${1:t0}, ${2:t1}, ${3:imm}; # $1 = $2 | $3\n",
+		"description": "bitwise or",
+		"scope": "source.riscv"
+	},
+	"xori": {
+		"prefix": "xori",
+		"body": "xori\t${1:t0}, ${2:t1}, ${3:imm}; # $1 = $2 ^ $3\n",
+		"description": "bitwise xor",
+		"scope": "source.riscv"
+	},
+	
+	"sll": {
+		"prefix": "sll",
+		"body": "sll\t${1:t0}, ${2:t1}, ${3:t2}; # $1 = $2 << $3\n",
+		"description": "shift left logical",
+		"scope": "source.riscv"
+	},
+	"srl": {
+		"prefix": "srl",
+		"body": "srl\t${1:t0}, ${2:t1}, ${3:t2}; # $1 = $2 >>U $3\n",
+		"description": "shift right logical",
+		"scope": "source.riscv"
+	},
+	"sra": {
+		"prefix": "sra",
+		"body": "sra\t${1:t0}, ${2:t1}, ${3:t2}; # $1 = $2 >> $3\n",
+		"description": "shift right arithmetic",
+		"scope": "source.riscv"
+	},
+	
+	"slli": {
+		"prefix": "slli",
+		"body": "slli\t${1:t0}, ${2:t1}, ${3:shamt}; # $1 = $2 << $3\n",
+		"description": "shift left logical immediate",
+		"scope": "source.riscv"
+	},
+	"srli": {
+		"prefix": "srli",
+		"body": "srli\t${1:t0}, ${2:t1}, ${3:t2}; # $1 = $2 >>U $3\n",
+		"description": "shift right logical immediate",
+		"scope": "source.riscv"
+	},
+	"srai": {
+		"prefix": "srai",
+		"body": "srai\t${1:t0}, ${2:t1}, ${3:t2}; # $1 = $2 >> $3\n",
+		"description": "shift right arithmetic immediate",
+		"scope": "source.riscv"
+	},
+	
 	"addi": {
 		"prefix": "addi",
 		"body": "addi\t${1:t0}, ${2:t1}, ${3:imm}; # $1 = $2 + $3\n",
