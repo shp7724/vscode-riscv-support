@@ -1,6 +1,6 @@
 {
 	
-	"neg": {
+	"two's complement": {
 		"prefix": "neg",
 		"body": "neg\t${1:t0}, ${2:t1}; # $1 = -$2\n",
 		"description": "two's complement",
