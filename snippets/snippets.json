@@ -2,35 +2,35 @@
 	
 	"two's complement": {
 		"prefix": "neg",
-		"body": "neg\t${1:t0}, ${2:t1}; # $1 = -$2\n",
+		"body": "neg\t${1:t0}, ${2:t1} # $1 = -$2\n",
 		"description": "two's complement",
 		"scope": "source.riscv"
 	},
 	
 	"set less than": {
 		"prefix": "slt",
-		"body": "slt\t${1:t0}, ${2:t1}, ${3:t2}; # $1 = ($2 < $3) ? 1 : 0\n",
+		"body": "slt\t${1:t0}, ${2:t1}, ${3:t2} # $1 = ($2 < $3) ? 1 : 0\n",
 		"description": "set less than",
 		"scope": "source.riscv"
 	},
 	
 	"set less than immediate": {
 		"prefix": "slti",
-		"body": "slti\t${1:t0}, ${2:t1}, ${3:imm}; # $1 = ($2 < $3) ? 1 : 0\n",
+		"body": "slti\t${1:t0}, ${2:t1}, ${3:imm} # $1 = ($2 < $3) ? 1 : 0\n",
 		"description": "set less than immediate",
 		"scope": "source.riscv"
 	},
 	
 	"set less than unsigned": {
 		"prefix": "sltu",
-		"body": "sltu\t${1:t0}, ${2:t1}, ${3:t2}; # $1 = ($2 <U $3) ? 1 : 0\n",
+		"body": "sltu\t${1:t0}, ${2:t1}, ${3:t2} # $1 = ($2 <U $3) ? 1 : 0\n",
 		"description": "set less than unsigned",
 		"scope": "source.riscv"
 	},
 	
 	"set less than immediate unsigned": {
 		"prefix": "sltiu",
-		"body": "sltiu\t${1:t0}, ${2:t1}, ${3:imm}; # $1 = ($2 <U $3) ? 1 : 0\n",
+		"body": "sltiu\t${1:t0}, ${2:t1}, ${3:imm} # $1 = ($2 <U $3) ? 1 : 0\n",
 		"description": "set less than immediate unsigned",
 		"scope": "source.riscv"
 	},
@@ -39,95 +39,95 @@
 	
 	"bitwise and": {
 		"prefix": "and",
-		"body": "and\t${1:t0}, ${2:t1}, ${3:t2}; # $1 = $2 & $3\n",
+		"body": "and\t${1:t0}, ${2:t1}, ${3:t2} # $1 = $2 & $3\n",
 		"description": "bitwise and",
 		"scope": "source.riscv"
 	},
 	"bitwise or": {
 		"prefix": "or",
-		"body": "or\t${1:t0}, ${2:t1}, ${3:t2}; # $1 = $2 | $3\n",
+		"body": "or\t${1:t0}, ${2:t1}, ${3:t2} # $1 = $2 | $3\n",
 		"description": "bitwise or",
 		"scope": "source.riscv"
 	},
 	"bitwise xor": {
 		"prefix": "xor",
-		"body": "xor\t${1:t0}, ${2:t1}, ${3:t2}; # $1 = $2 ^ $3\n",
+		"body": "xor\t${1:t0}, ${2:t1}, ${3:t2} # $1 = $2 ^ $3\n",
 		"description": "bitwise xor",
 		"scope": "source.riscv"
 	},
 	
 	"bitwise and immediate": {
 		"prefix": "andi",
-		"body": "andi\t${1:t0}, ${2:t1}, ${3:imm}; # $1 = $2 & $3\n",
+		"body": "andi\t${1:t0}, ${2:t1}, ${3:imm} # $1 = $2 & $3\n",
 		"description": "bitwise and",
 		"scope": "source.riscv"
 	},
 	"bitwise or immediate": {
 		"prefix": "ori",
-		"body": "ori\t${1:t0}, ${2:t1}, ${3:imm}; # $1 = $2 | $3\n",
+		"body": "ori\t${1:t0}, ${2:t1}, ${3:imm} # $1 = $2 | $3\n",
 		"description": "bitwise or",
 		"scope": "source.riscv"
 	},
 	"bitwise xor immediate": {
 		"prefix": "xori",
-		"body": "xori\t${1:t0}, ${2:t1}, ${3:imm}; # $1 = $2 ^ $3\n",
+		"body": "xori\t${1:t0}, ${2:t1}, ${3:imm} # $1 = $2 ^ $3\n",
 		"description": "bitwise xor",
 		"scope": "source.riscv"
 	},
 	
 	"shift left logical": {
 		"prefix": "sll",
-		"body": "sll\t${1:t0}, ${2:t1}, ${3:t2}; # $1 = $2 << $3\n",
+		"body": "sll\t${1:t0}, ${2:t1}, ${3:t2} # $1 = $2 << $3\n",
 		"description": "shift left logical",
 		"scope": "source.riscv"
 	},
 	"shift right logical": {
 		"prefix": "srl",
-		"body": "srl\t${1:t0}, ${2:t1}, ${3:t2}; # $1 = $2 >>U $3\n",
+		"body": "srl\t${1:t0}, ${2:t1}, ${3:t2} # $1 = $2 >>U $3\n",
 		"description": "shift right logical",
 		"scope": "source.riscv"
 	},
 	"shift right arithmetic": {
 		"prefix": "sra",
-		"body": "sra\t${1:t0}, ${2:t1}, ${3:t2}; # $1 = $2 >> $3\n",
+		"body": "sra\t${1:t0}, ${2:t1}, ${3:t2} # $1 = $2 >> $3\n",
 		"description": "shift right arithmetic",
 		"scope": "source.riscv"
 	},
 	
 	"shift left logical immediate": {
 		"prefix": "slli",
-		"body": "slli\t${1:t0}, ${2:t1}, ${3:shamt}; # $1 = $2 << $3\n",
+		"body": "slli\t${1:t0}, ${2:t1}, ${3:shamt} # $1 = $2 << $3\n",
 		"description": "shift left logical immediate",
 		"scope": "source.riscv"
 	},
 	"shift right logical immediate": {
 		"prefix": "srli",
-		"body": "srli\t${1:t0}, ${2:t1}, ${3:shamt}; # $1 = $2 >>U $3\n",
+		"body": "srli\t${1:t0}, ${2:t1}, ${3:shamt} # $1 = $2 >>U $3\n",
 		"description": "shift right logical immediate",
 		"scope": "source.riscv"
 	},
 	"shift right arithmetic immediate": {
 		"prefix": "srai",
-		"body": "srai\t${1:t0}, ${2:t1}, ${3:shamt}; # $1 = $2 >> $3\n",
+		"body": "srai\t${1:t0}, ${2:t1}, ${3:shamt} # $1 = $2 >> $3\n",
 		"description": "shift right arithmetic immediate",
 		"scope": "source.riscv"
 	},
 	
 	"add immediate": {
 		"prefix": "addi",
-		"body": "addi\t${1:t0}, ${2:t1}, ${3:imm}; # $1 = $2 + $3\n",
+		"body": "addi\t${1:t0}, ${2:t1}, ${3:imm} # $1 = $2 + $3\n",
 		"description": "add immediate",
 		"scope": "source.riscv"
 	},
 	"add": {
 		"prefix": "add",
-		"body": "add\t${1:t0}, ${2:t1}, ${3:t2}; # $1 = $2 + $3\n",
+		"body": "add\t${1:t0}, ${2:t1}, ${3:t2} # $1 = $2 + $3\n",
 		"description": "add",
 		"scope": "source.riscv"
 	},
 	"branch if equal": {
 		"prefix": "beq",
-		"body": "beq\t${1:t0}, ${2:t1}, ${3:target}; # if $1 == $2 then $3\n",
+		"body": "beq\t${1:t0}, ${2:t1}, ${3:target} # if $1 == $2 then $3\n",
 		"description": "branch if equal",
 		"scope": "source.riscv"
 	},
@@ -164,7 +164,7 @@
 	
 	"call function": {
 		"prefix": "call",
-		"body": "call\t${1:target}; # jump to $1 and save position to ra\n",
+		"body": "call\t${1:target} # jump to $1 and save position to ra\n",
 		"description": "call function",
 		"scope": "source.riscv"
 	},
